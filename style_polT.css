@@ -1671,7 +1671,7 @@ div.login_menu_sub{padding-left:0;padding-right:0}
 #login_menu .btn-small.disabled{opacity:0.5;filter:alpha(opacity=50);cursor:not-allowed}
 #main_banner1{background:#ccc;margin-bottom:5px}
 #main_banner1 li{list-style:none}
-#main_banner1 img{display:block;margin:0 auto;width:100%}
+#main_banner1 img{margin:0 auto;width:100%}
 .bx-viewport li{min-height:1px;min-width:1px}
 div.bx-wrapper{position:relative}
 .bx-wrapper img{display:block;margin:0 auto;max-width:100%}
