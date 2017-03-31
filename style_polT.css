@@ -1497,7 +1497,7 @@ ul.dl-menu,.dl-menuwrapper > .dl-submenu{padding:0;list-style:none}
 .dl-menu li > a:after{margin-left:10px}
 .dl-menu li > span:after{margin-left:10px}
 .dl-menuwrapper .dl-menu:before{content:''}
-.dl-menuwrapper .dl-menu{display:flex;width:calc(100% - 300px)}
+.dl-menuwrapper .dl-menu{display:-webkit-box;display:-ms-flexbox;display:flex;width:calc(100% - 300px)}
 .dl-menuwrapper .dl-menu.dl-menu-toggle{transition:all 0.3s ease}
 .dl-menuwrapper .dl-menu.dl-menuopen{opacity:1;pointer-events:auto;-webkit-transform:translateY(0px);transform:translateY(0px)}
 .dl-menuwrapper .dl-menuopen:before{line-height:1;speak:none;-webkit-font-smoothing:antialiased;color:#333;font-family:'FontAwesome';font-size:18px;left:10px;line-height:1;position:absolute;top:-12px;content:'\F0D8'}
