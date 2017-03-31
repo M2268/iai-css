@@ -3932,7 +3932,7 @@ div.cms_fb_comments iframe{border:none;width:756px !important}
     .dl-menu > li{padding:0 4.1px!important}
     .dl-menu > li > a{font-size:0.9rem}
     .dl-menu > li > span{font-size:0.9rem}
-    .dl-menuwrapper .dl-menu{display:flex;width:calc(100% - 34px)}
+    .dl-menuwrapper .dl-menu{display:-webkit-box;display:-ms-flexbox;display:flex;width:calc(100% - 34px)}
     div.cat_product{width:42px}
     #gora .pasek1{max-width:749px}
     #gora .pasek2 .wyrozniki{max-width:749px}
