@@ -2641,7 +2641,7 @@ div.comments i{font-size:1.2em}
 #projector_form .tab a:hover{text-decoration:none;color:#404040}
 #projector_form a.show_size_cms:hover{text-decration:underline;color:#404040}
 #projector_form div.product_section.versions label.projector_label{color:#303030;display:block;font-size:14px;margin-bottom:7px;border-bottom:1px solid #999;padding:0 0 5px;text-transform:uppercase}
-#projector_form div.product_section.versions .select_button{padding:0 2px;margin:0;border:0;background:none;text-align:center;}
+#projector_form div.product_section.versions .select_button{padding:0 2px;margin:0 1px;border:0;background:none;text-align:center;}
 #projector_form div.product_section.versions .select_button:hover{box-shadow:0 0 0 1px #029cd8 inset}
 #projector_form div.product_section.versions .select_button.active{box-shadow:0 0 0 1px #039cd6 inset}
 #projector_form div.product_section.versions .select_button img{height:65px;width:auto;margin:1px;max-width:100%}
