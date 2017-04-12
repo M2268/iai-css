@@ -2641,7 +2641,7 @@ div.comments i{font-size:1.2em}
 #projector_form .tab a:hover{text-decoration:none;color:#404040}
 #projector_form a.show_size_cms:hover{text-decration:underline;color:#404040}
 #projector_form div.product_section.versions label.projector_label{color:#303030;display:block;font-size:14px;margin-bottom:7px;border-bottom:1px solid #999;padding:0 0 5px;text-transform:uppercase}
-#projector_form div.product_section.versions .select_button{padding:0;margin:0;border:0;background:none;text-align:center;max-width:107px;width:5vw}
+#projector_form div.product_section.versions .select_button{padding:0 2px;margin:0;border:0;background:none;text-align:center;}
 #projector_form div.product_section.versions .select_button:hover{box-shadow:0 0 0 1px #029cd8 inset}
 #projector_form div.product_section.versions .select_button.active{box-shadow:0 0 0 1px #039cd6 inset}
 #projector_form div.product_section.versions .select_button img{height:65px;width:auto;margin:1px;max-width:100%}
@@ -3977,7 +3977,6 @@ div.cms_fb_comments iframe{border:none;width:756px !important}
     #projector_form div.product_info{width:39%}
     #projector_form div.product_section.points button{box-sizing:border-box;display:block;float:none;margin:10px auto;width:100%}
     #projector_form div.product_section.points button:hover{box-sizing:border-box;display:block;float:none;margin:10px auto;width:100%}
-    #projector_form div.product_section.versions .select_button{max-width:61px;width:7vw}
     #projector_form div.bookmarklets_big{text-align:center;padding:0}
     #projector_form div.bookmarklets_big li:first-child{display:none}
     .projector_points_sub_wrapper{width:100%;float:none}
