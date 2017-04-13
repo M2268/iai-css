@@ -1474,6 +1474,7 @@ a.display_all{font-size:0.85em !important}
 .dl-menuwrapper > .dl-submenu span{color:#666;padding:5px 20px 5px 10px;display:block;position:relative}
 .dl-menu > li{display:block;list-style:none;white-space:nowrap;height:40px;padding:0 10px}
 .dl-menu > li > a{color:#000;line-height:40px;height:40px;display:block;text-decoration:none;font-size:1rem;font-weight:700;text-decoration:none !important;font-size:14px}
+.dl-menu li a[title='Gift card']{display: none}
 .dl-menu > li > span{color:#000;line-height:40px;height:40px;display:block;text-decoration:none;font-size:1rem;font-weight:700;text-decoration:none !important;font-size:14px}
 .dl-menu > li:hover > a{border-bottom:4px solid #000}
 .dl-menu > li:hover > span{border-bottom:4px solid #000}
@@ -2641,7 +2642,7 @@ div.comments i{font-size:1.2em}
 #projector_form .tab a:hover{text-decoration:none;color:#404040}
 #projector_form a.show_size_cms:hover{text-decration:underline;color:#404040}
 #projector_form div.product_section.versions label.projector_label{color:#303030;display:block;font-size:14px;margin-bottom:7px;border-bottom:1px solid #999;padding:0 0 5px;text-transform:uppercase}
-#projector_form div.product_section.versions .select_button{padding:0 2px;margin:0 1px;border:0;background:none;text-align:center;}
+#projector_form div.product_section.versions .select_button{padding:0 2px;margin:0;border:0;background:none;text-align:center;}
 #projector_form div.product_section.versions .select_button:hover{box-shadow:0 0 0 1px #029cd8 inset}
 #projector_form div.product_section.versions .select_button.active{box-shadow:0 0 0 1px #039cd6 inset}
 #projector_form div.product_section.versions .select_button img{height:65px;width:auto;margin:1px;max-width:100%}
@@ -4739,7 +4740,9 @@ div.cms_fb_comments iframe{border:none;width:756px !important}
     .dl-menu > li > div.dl-submenu > .dl-submenu_sub > .subcat > .dl-submenu{width:auto}
     .dl-menu div.subcat{background:#fff;display:block;padding:0;vertical-align:top}
     .dl-menu > li:nth-child(3) div.dl-submenu > .dl-submenu_sub > .subcat > ul.dl-submenu {display: table-cell}
-.dl-menu > li > div.dl-submenu > .dl-submenu_sub > .subcat > .dl-submenu {-webkit-column-count: inherit;-moz-column-count: inherit;column-count: inherit}
+    .dl-menu > li > div.dl-submenu > .dl-submenu_sub > .subcat > .dl-submenu {-webkit-column-count: inherit;-moz-column-count: inherit;column-count: inherit}}
+@media only screen and (min-width:757px) and (max-width:979px){
+    .dl-menu li a[title='Gift card']{display: none}}
 @media only screen and (min-width:1200px){
     div.basketedit_summary_right{width:50%}
     aside.span3{font-size:1em}
