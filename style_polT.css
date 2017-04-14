@@ -4741,6 +4741,10 @@ div.cms_fb_comments iframe{border:none;width:756px !important}
     .dl-menu div.subcat{background:#fff;display:block;padding:0;vertical-align:top}
     .dl-menu > li:nth-child(3) div.dl-submenu > .dl-submenu_sub > .subcat > ul.dl-submenu {display: table-cell}
     .dl-menu > li > div.dl-submenu > .dl-submenu_sub > .subcat > .dl-submenu {-webkit-column-count: inherit;-moz-column-count: inherit;column-count: inherit}}
+@media only screen and (min-width:1033px) and (max-width:1120px){
+    .dl-menu li a[title='Gift card']{display: block}
+    .dl-menu li a[title='Karta podarunkowa']{display: none}
+}
 @media only screen and (min-width:757px) and (max-width:1032px){
     .dl-menu li a[title='Gift card']{display: block}
     .dl-menu li a[title='Karta podarunkowa']{display: none}
