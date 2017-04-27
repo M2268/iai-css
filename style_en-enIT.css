@@ -1769,7 +1769,7 @@ div.col-bg-1.align_row.main_hotspot_sub{overflow:hidden}
 #menu_button3{padding:0;overflow:hidden;margin:0 -10px}
 #menu_button3 div.menu_button_wrapper{padding:0 10px;display:inline-block;float:left;verflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #menu_button3 a{display:block}
-#menu_button3 img{width:100% !important;height:auto !important}
+#menu_button3 img{width:100%;height:auto !important}
 #main_cms2{padding-bottom:0}
 #main_hotspot_zone2 .products_wrapper{width:auto;padding:0}
 #main_hotspot_zone3 .products_wrapper{width:auto;padding:0}
