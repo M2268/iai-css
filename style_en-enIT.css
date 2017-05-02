@@ -1592,8 +1592,8 @@ div.cat_product .promo_counter .sep{display:inline-block;font-size:22px;line-hei
 #menu_basket_phone a span{display:block !important;text-align:center;font-size:9px;color:#000;text-decoration:none}
 #menu_basket_phone a:before{display:block;content:'';left:50%;transform:translateX(-50%);position:absolute;width:40px;height:40px;top:-47px}
 #menu_basket_phone a.wishes_link:before{}
-#menu_basket_phone a.account_link:before{background:url('/gfx/eng/account_m.png?r=1492502941') no-repeat center center}
-#menu_basket_phone a.basket_link:before{background:url('/gfx/eng/basket_m.png?r=1492502941') no-repeat center center}
+#menu_basket_phone a.account_link:before{background: url(/data/include/cms/icons/sig-in.svg) no-repeat center center;background-size: 40px;}
+#menu_basket_phone a.basket_link:before{background: url(/data/include/cms/icons/Koszyk1.svg) no-repeat center center;background-size: 40px;}
 #menu_basket_phone a.wishes_link{left:4%}
 #menu_basket_phone a.wishes_link i{position:absolute;top:-52px;font-size:4.5em}
 #menu_basket_phone a.account_link{right:3%}
@@ -4842,3 +4842,4 @@ div.stocks_list_wrapper{width:20%}}
  .dl-menu li a[title='Gift card']{display: block} .dl-menu li a[title='Karta podarunkowa']{display: none} .dl-menu li.Lookbook{display: none}}
 @media only screen and (min-width:1033px) and (max-width:1120px){
  .dl-menu li a[title='Gift card']{display: block}.dl-menu li a[title='Karta podarunkowa']{display: none}}
+@media only screen and (max-width: 757px) {.main_hotspot .product_wrapper {width: calc((100vw - 30px) / 2) !important;}}
