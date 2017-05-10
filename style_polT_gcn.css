@@ -974,7 +974,7 @@ span.filter_range_separate{display:inline-block;height:22px;text-align:right;ver
 #filter_remove_wrap{padding:0 5px 20px}
 .menu_filter_wrapper .filter_list_remove{cursor:pointer;display:inline-block;font-weight:700;line-height:1.2;text-align:left;text-decoration:none;background:#fff;border:1px solid #d2d2d2;color:#000;font-size:0.79rem;font-weight:400;margin-bottom:3px;margin-right:3px;padding:9px 29px 9px 7px;position:relative;text-decoration:none;width:calc(33.333% - 2px)}
 .menu_filter_wrapper .filter_list_remove:nth-child(3n + 1){margin-right:0}
-.menu_filter_wrapper .filter_list_remove:after{content:'';font-family:FontAwesome;font-style:normal;margin-left:3px;text-decoration:inherit;position:absolute;right:6px;top:9px}
+.menu_filter_wrapper .filter_list_remove:after{content:'ď';font-family:FontAwesome;font-style:normal;margin-left:3px;text-decoration:inherit;position:absolute;right:6px;top:9px}
 .menu_filter_wrapper .clear_filters_h{display:block;font-size:1rem;color:#222;padding:3px 0 8px}
 #menu_filter{margin-bottom:10px}
 #menu_filter h2{display:none}
@@ -1592,8 +1592,8 @@ div.cat_product .promo_counter .sep{display:inline-block;font-size:22px;line-hei
 #menu_basket_phone a span{display:block !important;text-align:center;font-size:9px;color:#000;text-decoration:none}
 #menu_basket_phone a:before{display:block;content:'';left:50%;transform:translateX(-50%);position:absolute;width:40px;height:40px;top:-47px}
 #menu_basket_phone a.wishes_link:before{}
-#menu_basket_phone a.account_link:before{background:url('/gfx/pol/account_m.png?r=1492502941') no-repeat center center}
-#menu_basket_phone a.basket_link:before{background:url('/gfx/pol/basket_m.png?r=1492502941') no-repeat center center}
+#menu_basket_phone a.account_link:before{background:url(/data/include/cms/icons/sig-in.svg) no-repeat center center;background-size:40px;}
+#menu_basket_phone a.basket_link:before{background:url(/data/include/cms/icons/Koszyk1.svg) no-repeat center center;background-size: 40px;}
 #menu_basket_phone a.wishes_link{left:4%}
 #menu_basket_phone a.wishes_link i{position:absolute;top:-52px;font-size:4.5em}
 #menu_basket_phone a.account_link{right:3%}
@@ -2526,7 +2526,7 @@ div.projector_buttons{position:relative}
 div.product_section.tell_availability{margin:0}
 div.clearBoth{clear:both;height:auto}
 div.projector_alert_55916{background:#d9edf7;border:1px solid transparent;color:#337ab7;font-size:14px;padding:22px 65px !important;margin-bottom:10px !important;text-align:center;position:relative;position:absolute;z-index:9998;padding:20px 15px 20px 55px !important;margin:0 auto;font-weight:400;text-align:center;background-position:10px}
-a.projector_medium_image{position:relative;display:block}
+a.projector_medium_image{position:relative;display:inline-block}
 a.param_trait_gfx{display:inline-block;vertical-align:top}
 a.shipping_info{display:none}
 a.show_size_cms{clear:both;display:block;margin-top:10px;text-decoration:none;font-size:10px;color:#404040}
@@ -2546,7 +2546,8 @@ small.projector_price_unit_sep{display:none}
 small.projector_price_unit_sellby{margin-right:5px}
 small.projector_price_unit{display:none}
 button.projector_butttons_buy{background:url('/gfx/pol/background.jpg?r=1492502941');border:0;font-size:18px;height:44px;overflow:hidden;width:100%;padding:0 15px;text-align:center;font-weight:400;text-transform:none;margin:0 0 4px}
-.photos .slide_photo ul img{margin: 0 auto;max-height: 543px; max-width: 543px}#projector_form .label_icons{clear:both}
+.photos .slide_photo ul img{margin:0 auto;max-height:543px;max-width:543px}
+#projector_form .label_icons{clear:both}
 #projector_form .label_icons span{display:inline-block;padding:2px 7px;margin:0 1px 15px 0;display:inline-block;text-transform:uppercase;background:#eee;font-size:12px;color:#fff;font-weight:400}
 #projector_form .label_icons .newproducts{background:#eee;color:#000}
 #projector_form .label_icons .promo{background:#db2b1d}
