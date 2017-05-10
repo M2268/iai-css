@@ -747,7 +747,7 @@ div.contact_address_right p{padding-bottom:3px;padding-right:10px}
 div.contact_address_right p span img{background:none repeat scroll 0 0 #FFFFFF;position:relative;top:4px;width:16px}
 div.contact_address_right p a img{background:none repeat scroll 0 0 #FFFFFF;position:relative;top:4px;width:16px}
 @font-face{font-family:'FontAwesome';src:url('/gfx/eng/fontawesome-webfont.eot?v=3.2.1');src:url('/gfx/eng/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'),url('/gfx/eng/fontawesome-webfont.woff?v=3.2.1') format('woff'),url('/gfx/eng/fontawesome-webfont.ttf?v=3.2.1') format('truetype'),url('/gfx/eng/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');font-weight:normal;font-style:normal}
-html{font-size:14px}
+html{font-size:14px;overflow-x:hidden}
 body{margin:0;width:100%;font-family:Arial,Tahoma,Verdana,Helvetica,sans-serif;font-size:12px;line-height:1.3;color:#303030;background:#fff;overflow-x:hidden}
 input{margin:0;padding:0;outline:none;font-family:inherit}
 input[type=text]{color:#333;height:30px;padding:5px;font-size:0.956em;border:1px solid #c4c7c8}
@@ -775,7 +775,7 @@ html.svgclippaths a{filter:none !important}
 html.svgclippaths button:hover{filter:none !important}
 html.svgclippaths input:hover{filter:none !important}
 html.svgclippaths a:hover{filter:none !important}
-.big_label{font-size:1.5em;font-weight:400;color:#111;text-transform:uppercase;text-align:left;display:block;padding:0;text-decoration:none;ine-height:1.5;margin:0 0 10px}
+.big_label{font-size:1.5em;font-weight:400;color:#111;text-transform:uppercase;text-align:left;display:block;padding:0;text-decoration:none;line-height:1.5;margin:0 0 10px}
 .btn-small{background:#333;border:1px solid #333;color:#fff;text-transform:uppercase;text-decoration:none;font-size:0.9em;padding:5px 10px;font-weight:700;font-family:Arial;display:inline-block;cursor:pointer;overflow:visible;text-align:center;line-height:1.2}
 .btn-small:hover{background:#212121;border-color:#212121;color:#fff;text-decoration:none}
 .btn{background:#333;border:1px solid #333;color:#fff;text-transform:uppercase;text-decoration:none;font-size:1em;padding:10px 17px;font-weight:700;font-family:Arial;display:inline-block;cursor:pointer;overflow:visible;text-align:center;line-height:1.2}
@@ -1500,7 +1500,7 @@ ul.dl-menu,.dl-menuwrapper > .dl-submenu{padding:0;list-style:none}
 .dl-menu li > a:after{margin-left:10px}
 .dl-menu li > span:after{margin-left:10px}
 .dl-menuwrapper .dl-menu:before{content:''}
-.dl-menuwrapper .dl-menu{display:-webkit-box;display:-ms-flexbox;display:flex;width:calc(100% - 300px)}
+.dl-menuwrapper .dl-menu{display:-webkit-box;display:-ms-flexbox;display:flex;display:-webkit-flex;width:calc(100%)}
 .dl-menuwrapper .dl-menu.dl-menu-toggle{transition:all 0.3s ease}
 .dl-menuwrapper .dl-menu.dl-menuopen{opacity:1;pointer-events:auto;-webkit-transform:translateY(0px);transform:translateY(0px)}
 .dl-menuwrapper .dl-menuopen:before{line-height:1;speak:none;-webkit-font-smoothing:antialiased;color:#333;font-family:'FontAwesome';font-size:18px;left:10px;line-height:1;position:absolute;top:-12px;content:'\F0D8'}
@@ -1592,8 +1592,8 @@ div.cat_product .promo_counter .sep{display:inline-block;font-size:22px;line-hei
 #menu_basket_phone a span{display:block !important;text-align:center;font-size:9px;color:#000;text-decoration:none}
 #menu_basket_phone a:before{display:block;content:'';left:50%;transform:translateX(-50%);position:absolute;width:40px;height:40px;top:-47px}
 #menu_basket_phone a.wishes_link:before{}
-#menu_basket_phone a.account_link:before{background: url(/data/include/cms/icons/sig-in.svg) no-repeat center center;background-size: 40px;}
-#menu_basket_phone a.basket_link:before{background: url(/data/include/cms/icons/Koszyk1.svg) no-repeat center center;background-size: 40px;}
+#menu_basket_phone a.account_link:before{background:url(/data/include/cms/icons/sig-in.svg) no-repeat center center;background-size:40px;}
+#menu_basket_phone a.basket_link:before{background:url(/data/include/cms/icons/Koszyk1.svg) no-repeat center center;background-size: 40px;}
 #menu_basket_phone a.wishes_link{left:4%}
 #menu_basket_phone a.wishes_link i{position:absolute;top:-52px;font-size:4.5em}
 #menu_basket_phone a.account_link{right:3%}
@@ -1609,8 +1609,9 @@ div.cat_product .promo_counter .sep{display:inline-block;font-size:22px;line-hei
 .filters_expand_mobile #filters_show_search:after{content:'\f106'}
 .filters_expand_mobile #categories_show_search{border-top:none;border-bottom:1px solid #a9a9a9}
 .from_categories #filters_show_search{border-top:none;border-bottom:1px solid #a9a9a9}
-#main_cats_aside{padding:2px 4px 0;border-bottom:1px solid #d2d2d2}
-#main_cats_aside span{padding:10px 0;font-size:0.9rem;color:#333;display:inline-block;position:relative;cursor:pointer;margin:0 7px}
+#main_cats_aside{background:#fff;border-bottom:1px solid #d2d2d2;display:none !important;padding:2px 0 0;position:absolute;width:101vw;}
+.from_menu #main_cats_aside{display:inherit !important;}
+#main_cats_aside span{padding:10px 0;font-size:0.81rem;color:#333;display:inline-block;position:relative;cursor:pointer;margin:0 7px}
 #main_cats_aside span.active{border-bottom:2px solid #555}
 #main_cats_aside span:after{position:absolute;content:'';height:15px;right:-7px;top:50%;transform:translateY(-50%);display:block;width:1px;background:#a9a9a9}
 #main_cats_aside span:last-child:after{display:none}
@@ -1618,7 +1619,7 @@ div.cat_product .promo_counter .sep{display:inline-block;font-size:22px;line-hei
 .filters_expand_mobile header{border-bottom:none;margin-top:-1px !important}
 .from_categories header{border-bottom:none;margin-top:-1px !important}
 #prev_cats_all{border-bottom:1px solid #e6e6e6;color:#606060 !important;display:none;font-size:1.2em;font-weight:400;padding:12px 20px 5px 30px;position:relative;cursor:pointer}
-.from_menu #prev_cats_all{display:block}
+#prev_cats_all{border-bottom:1px solid #e6e6e6;color:#606060 !important;display:none;font-size:1.2em;font-weight:400;padding:12px 20px 5px 30px;position:relative;cursor:pointer;margin-top:40px;}
 #prev_cats_all:after{color:#606060;content:'\f104';font-family:FontAwesome;font-size:20px;font-weight:300;position:absolute;padding-right:10px;height:20px;left:10px;top:7px}
 .from_all_cats aside{display:none !important}
 .top_settings{background:#111211;color:#fff;height:35px;left:0;line-height:35px;padding:0 30px;position:fixed;right:0;top:0;z-index:200;text-align:right}
@@ -1769,7 +1770,7 @@ div.col-bg-1.align_row.main_hotspot_sub{overflow:hidden}
 #menu_button3{padding:0;overflow:hidden;margin:0 -10px}
 #menu_button3 div.menu_button_wrapper{padding:0 10px;display:inline-block;float:left;verflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #menu_button3 a{display:block}
-#menu_button3 img{width:100%;height:auto !important}
+#menu_button3 img{width:100% !important;height:auto !important}
 #main_cms2{padding-bottom:0}
 #main_hotspot_zone2 .products_wrapper{width:auto;padding:0}
 #main_hotspot_zone3 .products_wrapper{width:auto;padding:0}
@@ -2024,6 +2025,9 @@ div.order1_label.order1_balance{margin:0;display:none !important}
 .prepaid_discount_wrapper label{white-space:normal;width:80%;margin-bottom:10px}
 div.order1_payment_wrapper{margin:0 -0.5%}
 div.order1_shippings:nth-child(2){border-left:medium none}
+.projector_to_mail_giftcard{padding-bottom:15px}
+.projector_to_mail_giftcard span{color:#029cd8;cursor:pointer}
+.projector_to_mail_giftcard span:hover{text-decoration:underline}
 .giftcard_form{padding:10px 15px 30px}
 .giftcard_form p{margin-bottom:30px}
 .giftcard_form div.giftcard_inputs{width:67%;margin:0 auto}
@@ -2433,7 +2437,10 @@ td.products_requests_list_info2{padding-top:5px;text-align:right;width:180px;bor
 a.products_requests_list_remlink{display:block;float:right;margin-bottom:5px;width:79px}
 form.giftcard_page{text-align:center}
 .giftcard{font-family:'Open Sans',Arial,sans-serif;color:#404040;font-weight:300;text-transform:uppercase}
-.giftcard > .giftcard_top,.giftcard > .giftcard_bottom{display:block;height:128px;width:100%;background-size:cover !important;opacity:0.5;filter:alpha(opacity=50)}
+.giftcard>.giftcard_top,.giftcard>.giftcard_bottom{background-size:cover !important;display:block;height:128px;opacity:0.5;width:100%;}
+body > .giftcard_top{display:block;height:34px !important;opacity:1 !important;width:100%;background:#000 !important}
+body > .giftcard_bottom{display:none !important}
+body.giftcard {background:url('/gfx/eng/background_left_deskt.jpg?r=1492502941') no-repeat top left;}
 .giftcard > *{display:none}
 .giftcard > #dialog_wrapper{display:block;box-shadow:0 0 20px rgba(0,0,0,0.1)}
 .giftcard #dialog_wrapper_sub{padding:0}
@@ -2442,20 +2449,20 @@ form.giftcard_page{text-align:center}
 .giftcard > #container{display:block}
 .giftcard > #container header{display:none}
 .giftcard > #container #content > *{display:none}
-.giftcard > #container #content > .giftcard_page{display:block}
+.giftcard > #container #content > .giftcard_page{display:block;margin-left:49%;width:51%}
 .giftcard > #alert_cover{display:block}
 .giftcard .disabled{display:none}
 .giftcard .disabled #card_preview{display:none}
 form.giftcard_page .required_in{border:1px solid #f00 !important}
-form.giftcard_page > h1{background:url('/gfx/eng/boxgift.jpg?r=1492502941') left center no-repeat;color:#029cd8;display:inline-block;font-size:4em;font-weight:300;height:65px;letter-spacing:3px;line-height:75px;margin:22px auto;padding-left:85px;text-transform:uppercase}
-form.giftcard_page > p{font-size:1.5em;margin-bottom:35px}
+form.giftcard_page > h1{background:url('/gfx/eng/boxgift.jpg?r=1492502941') top center no-repeat;color:#000;display:inline-block;font-size:3.74em;font-weight:600;letter-spacing:-0.7px;line-height:75px;margin:22px auto;padding-top:61px;text-transform:uppercase}
+form.giftcard_page > p{font-size:1.14rem;margin-bottom:35px;font-weight:400;text-transform:none}
+form.giftcard_page > p > .label-ecard{display:block;margin-top:15px;margin-bottom:65px;color:#000}
 form.giftcard_page .section{text-align:left;margin-bottom:35px}
-form.giftcard_page h2{font-size:1.33em;font-weight:300;text-transform:uppercase;margin-bottom:20px;margin-left:-25px;text-align:left}
-form.giftcard_page h2 small{border:10px solid #e2e2e2;border-radius:100%;color:#e2e2e2;display:inline-block;font-size:3.33em;height:85px;line-height:60px;margin-right:-18px;text-align:center;vertical-align:middle;width:85px}
+form.giftcard_page h2{border-top: 1px solid #000;font-size:1.43rem;font-weight:700;text-transform:none;margin-bottom:0;margin-left:-15px;text-align:center}
+form.giftcard_page h2 > span{background:#fff;display:inline-block;margin:0 auto;padding:10px;position:relative;top:-25px;z-index:2}
 form.giftcard_page label{cursor:pointer;display:block}
-form.giftcard_page .input_box_wrap{display:table;text-align:center;width:100%}
-form.giftcard_page .input_box{display:table-cell;font-size:3em}
-form.giftcard_page .input_box.active{color:#029cd8}
+form.giftcard_page .input_box_wrap{display:table;text-align:center;width:100%;padding:5px 0 10px}
+form.giftcard_page .input_box{display:table-cell;font-size:1.43rem;font-weight:400}
 form.giftcard_page #pick_theme .input_box{width:auto;padding:5px 50px;font-size:1.5em}
 form.giftcard_page #pick_theme .input_box .theme_window{height:115px;width:100%;margin-bottom:10px;border:1px solid #404040;background-size:cover !important}
 form.giftcard_page .section .table{width:100%}
@@ -2466,30 +2473,29 @@ form.giftcard_page input[type='checkbox'].required_in + label:before{border:1px 
 form.giftcard_page input[type='checkbox'] + label:before{background:#ffffff none repeat scroll 0 0;border:1px solid #ccc;content:'';cursor:pointer;display:inline-block;float:left;height:17px;margin-right:10px;width:17px;cursor:pointer}
 form.giftcard_page input[type='checkbox']:checked + label:before{background:url('/gfx/eng/dencheck.jpg?r=1492502941') center center no-repeat}
 form.giftcard_page input[type='radio']{display:none}
-form.giftcard_page input[type='radio'] + label:before{background:#fff;border:3px solid #fff;border-radius:100%;box-shadow:0 0 1.5px #666;content:'';cursor:pointer;display:inline-block;vertical-align:top;margin-top:3px;height:9px;margin-right:10px;width:9px;cursor:pointer}
-form.giftcard_page input[type='radio']:checked + label:before{background:#029cd8 none repeat scroll 0 0}
+form.giftcard_page input[type='radio'] + label:before{background:#fff;border:3px solid #fff;border-radius:100%;box-shadow:0 0 1.5px #444;content:'';cursor:pointer;display:inline-block;vertical-align:top;margin-top:-3px;height:5px;margin-right:10px;width:5px;cursor:pointer}
+form.giftcard_page input[type='radio']:checked + label:before{background:#000 none repeat scroll 0 0}
 form.giftcard_page input[type='radio'] + label:after{display:none}
-form.giftcard_page .input_box input[type='radio'] + label:before{display:none}
-form.giftcard_page .input_box input[type='radio'] + label:after{background:#ffffff none repeat scroll 0 0;border:3px solid #fff;border-radius:100%;box-shadow:0 0 1.5px #666;content:'';cursor:pointer;display:block;height:9px;margin:20px auto;width:9px;cursor:pointer}
-form.giftcard_page .input_box input[type='radio']:checked + label:after{background:#029cd8 none repeat scroll 0 0}
-form.giftcard_page #pick_theme .input_box input[type='radio'] + label:after{margin:7px auto}
+form.giftcard_page .input_box input[type='radio'] + label:before{display:inline-block;vertical-align:middle;}
 form.giftcard_page #card_summary{text-align:center}
 form.giftcard_page #card_summary div.accept_terms{display:inline-block;font-size:1.33em;line-height:1.1em;text-transform:none;margin-bottom:35px}
-form.giftcard_page #card_summary div.buttons a{vertical-align:top;margin:5px;height:40px;color:#029cd8;border:1px solid #aaa;background:#dcdcdc;font-weight:300}
-form.giftcard_page #card_summary div.buttons a:hover{background:#e2e2e2}
-form.giftcard_page #card_summary div.buttons button{vertical-align:top;margin:5px;height:40px;color:#fff;border:1px solid #aaa;background:#029cd8;font-weight:300}
-form.giftcard_page #card_summary div.buttons button:hover{background:#2ab6ed}
+form.giftcard_page #card_summary div.buttons a{vertical-align:top;margin:5px;height:40px;color:#000;border:1px solid #000;background:#fff;font-weight:300}
+form.giftcard_page #card_summary div.buttons a:hover{background:#f9f9f9}
+form.giftcard_page #card_summary div.buttons button{vertical-align:top;margin:5px;height:40px;color:#fff;border:1px solid #000;background:#000;font-weight:300}
+form.giftcard_page #card_summary div.buttons div{vertical-align:top;margin:5px;height:40px;color:#fff;border:1px solid #000;background:#000;font-weight:300}
+form.giftcard_page #card_summary div.buttons button:hover{background:#333}
+form.giftcard_page #card_summary div.buttons div:hover{background:#333}
+form.giftcard_page #send_type .pick_optional{display:none}
 form.giftcard_page ::-webkit-input-placeholder{text-transform:uppercase}
 form.giftcard_page :-moz-placeholder{text-transform:uppercase}
 form.giftcard_page ::-moz-placeholder{text-transform:uppercase}
 form.giftcard_page :-ms-input-placeholder{text-transform:uppercase}
-form.giftcard_page .pick_optional{font-size:1.33em;text-align:center}
-form.giftcard_page .optional{padding:25px 65px}
-form.giftcard_page .optional.border-left{border-left:1px solid #e2e2e2}
-form.giftcard_page .optional.border-right{border-right:1px solid #e2e2e2}
+form.giftcard_page .pick_optional{font-size:1.14rem;text-transform:none;text-align:left}
+form.giftcard_page .optional{padding:15px 65px 25px 0}
 form.giftcard_page .optional *{width:100%;display:block}
-form.giftcard_page .optional input{border:1px solid #404040;margin-bottom:4px;padding:10px 15px;height:auto;letter-spacing:1px}
-form.giftcard_page .optional span{text-align:right;text-transform:none;display:inline-block;padding-right:10px}
+form.giftcard_page .optional input{border:1px solid #404040;margin-bottom:4px;padding:10px 15px;max-width:400px;height:auto;letter-spacing:1px}
+form.giftcard_page .optional span{text-align:right;text-transform:none;display:inline-block;max-width:400px;padding-right:10px}
+form.giftcard_page #pick_signature input[type='radio'] + label:before{margin-top:5px}
 div.projgc_preview{text-align:center}
 div.projgc_preview .prev_container{display:block;text-transform:none;padding-bottom:30px}
 div.projgc_preview .header{padding:20px;overflow:hidden}
@@ -2520,7 +2526,7 @@ div.projector_buttons{position:relative}
 div.product_section.tell_availability{margin:0}
 div.clearBoth{clear:both;height:auto}
 div.projector_alert_55916{background:#d9edf7;border:1px solid transparent;color:#337ab7;font-size:14px;padding:22px 65px !important;margin-bottom:10px !important;text-align:center;position:relative;position:absolute;z-index:9998;padding:20px 15px 20px 55px !important;margin:0 auto;font-weight:400;text-align:center;background-position:10px}
-a.projector_medium_image{position:relative;display:block}
+a.projector_medium_image{position:relative;display:inline-block}
 a.param_trait_gfx{display:inline-block;vertical-align:top}
 a.shipping_info{display:none}
 a.show_size_cms{clear:both;display:block;margin-top:10px;text-decoration:none;font-size:10px;color:#404040}
@@ -2540,6 +2546,7 @@ small.projector_price_unit_sep{display:none}
 small.projector_price_unit_sellby{margin-right:5px}
 small.projector_price_unit{display:none}
 button.projector_butttons_buy{background:url('/gfx/eng/background.jpg?r=1492502941');border:0;font-size:18px;height:44px;overflow:hidden;width:100%;padding:0 15px;text-align:center;font-weight:400;text-transform:none;margin:0 0 4px}
+.photos .slide_photo ul img{margin:0 auto;max-height:543px;max-width:543px}
 #projector_form .label_icons{clear:both}
 #projector_form .label_icons span{display:inline-block;padding:2px 7px;margin:0 1px 15px 0;display:inline-block;text-transform:uppercase;background:#eee;font-size:12px;color:#fff;font-weight:400}
 #projector_form .label_icons .newproducts{background:#eee;color:#000}
@@ -3985,8 +3992,8 @@ div.pickupl_site{width:25%}
 .touch .hasScrollBar{margin-right:-10px}
 .compare .item_width{padding:10px}
 .configure a span{max-width:120px}
+.giftcard > #container #content > .giftcard_page{display:block;margin-left:calc(100% - 541px);width:541px}
 form.giftcard_page h2{margin-left:0}
-form.giftcard_page .input_box{font-size:2em}
 form.giftcard_page #pick_theme .input_box{padding:5px 20px}
 form.giftcard_page .optional{padding:25px 45px}
 div.product_info_top{text-align:left}
@@ -4387,6 +4394,7 @@ ul.dl-menu{background:#fff;clear:both;display:block;padding:10px;border-bottom:n
 #menu_categories2{border:0;width:auto;display:none !important}
 #mobile_menu{display:block;left:0;position:absolute;top:-13px}
 ul.dl-menu,.dl-menuwrapper > .dl-submenu{padding:0}
+.search_page ul.dl-menu, .search_page .dl-menuwrapper > .dl-submenu{padding:0;margin-top:39px}
 .dl-menu li,.dl-menuwrapper > .dl-submenu li{display:block;font-weight:500;position:relative;text-align:left;vertical-align:middle;background:#fff}
 .dl-menuwrapper > .dl-menu{display:none}
 .dl-menu li div.dl-submenu{border:medium none;width:auto;position:static;top:0;display:block;padding:0;position:relative;box-shadow:none;margin-left:15px}
@@ -4545,11 +4553,14 @@ div.product_stocks_size_wrapper{border-bottom:1px solid #c4c7c8;cursor:pointer;m
 .product_stocks_list_s_w .table_wrapper{border-spacing:0;display:none;margin-left:0;padding-top:0px;padding-bottom:10px}
 .product_stocks_list_s_w .table_row{display:block;margin-bottom:5px}
 .product_stocks_list_s_w .table_cell{display:block}
+body.giftcard {background:none}
 .giftcard{padding:0}
 .giftcard > #container #content > .giftcard_page{padding:0 10px}
-form.giftcard_page > h1{background:none;font-size:2.5em;line-height:1.33em;margin-bottom:30px;padding-left:0}
-form.giftcard_page h2 span{display:inline-block;float:right;padding-top:30px;position:relative;vertical-align:middle;width:calc(100% - 70px);z-index:1}
-form.giftcard_page .input_box{font-size:2em;dislpay:block;border-bottom:1px solid #e0e0e0;display:block}
+form.giftcard_page .input_box label{margin-left:-51px}
+.giftcard > #container #content > .giftcard_page{margin:0;width:100%}
+form.giftcard_page .input_box label{text-align:center !important}
+form.giftcard_page > h1{margin-bottom:30px;padding-left:0}
+form.giftcard_page .input_box{display:block;border-bottom:1px solid #e0e0e0;display:block}
 form.giftcard_page .input_box label{clear:both;display:block;line-height:55px;padding:0 20px;text-align:left;text-indent:40px}
 form.giftcard_page #pick_theme .input_box label{padding:0}
 form.giftcard_page #pick_theme .input_box{padding:5px 10px}
@@ -4560,8 +4571,11 @@ form.giftcard_page #pick_theme .input_box input[type='radio'] + label:after{marg
 form.giftcard_page #card_summary div.buttons a{margin:5px 0}
 form.giftcard_page #card_summary div.buttons button{margin:5px 0}
 form.giftcard_page .optional{padding:25px 10px}
+form.giftcard_page .optional input{width:100%;max-width:100%;margin-bottom:4px}
+form.giftcard_page .optional span{width:100%;max-width:100%}
 form.giftcard_page .optional.border-left{border:none}
 form.giftcard_page .optional.border-right{border:none}
+form.giftcard_page label{text-align:center}
 div.projgc_preview .header span{background-position:center top;background-size:40px auto;box-sizing:unset;display:block;font-size:2em;line-height:1em;padding-left:0;padding-top:60px;text-align:center}
 div.projgc_preview .header i{display:none}
 div.projgc_preview .bigprice{font-size:4em}
@@ -4777,6 +4791,7 @@ div.basketedit_summary_right{width:50%}
 aside.span3{font-size:1em}
 aside{font-size:1em}
 header{font-size:1em}
+/*.dl-menu > li{padding:0 25.5px!important}*/
 .menu_fixed .dl-menu > li > a{padding:0 29.8px!important}
 form.giftcard_page .section .table_cell{width:540px}
 a.projector_buttons_obs{text-align:center}
@@ -4840,5 +4855,10 @@ div.stocks_list_wrapper{width:20%}}
 @media only screen and (min-width:757px) and (max-width:1032px){
  .dl-menu li a[title='Gift card']{display: block} .dl-menu li a[title='Karta podarunkowa']{display: none} .dl-menu li.Lookbook{display: none}}
 @media only screen and (min-width:1033px) and (max-width:1120px){
- .dl-menu li a[title='Gift card']{display: block}.dl-menu li a[title='Karta podarunkowa']{display: none}}
-@media only screen and (max-width: 757px) {.main_hotspot .product_wrapper {width: calc((100vw - 30px) / 2) !important;}}
+ .dl-menu li a[title='Gift card']{display: block}.dl-menu li a[title='Karta podarunkowa']{display: none}
+#projector_form div.product_section.versions .select_button{padding:0 2px;margin:0;border:0;background:none;text-align:center;}}
+.zx_mediaslot, iframe[name="google_conversion_frame"]{display:none}
+@media only screen and (max-width:1362px) {body.giftcard{background:url('/gfx/eng/background_left_tablet.jpg?r=1492502941') no-repeat top left}}
+@media only screen and (max-width:868px) {body.giftcard{background-position:-115px 0 !important;}}
+@media only screen and (max-width:757px) {body.giftcard{background:none !important}}
+@media only screen and (max-width:757px) {.main_hotspot .product_wrapper {width: calc((100vw - 30px) / 2) !important;}}
