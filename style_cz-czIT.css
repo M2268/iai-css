@@ -1770,7 +1770,7 @@ div.col-bg-1.align_row.main_hotspot_sub{overflow:hidden}
 #menu_button3{padding:0;overflow:hidden;margin:0 -10px}
 #menu_button3 div.menu_button_wrapper{padding:0 10px;display:inline-block;float:left;verflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #menu_button3 a{display:block}
-#menu_button3 img{width:100% !important;height:auto !important}
+#menu_button3 img{height:auto !important}
 #main_cms2{padding-bottom:0}
 #main_hotspot_zone2 .products_wrapper{width:auto;padding:0}
 #main_hotspot_zone3 .products_wrapper{width:auto;padding:0}
@@ -4861,3 +4861,4 @@ div.stocks_list_wrapper{width:20%}}
 @media only screen and (max-width:1362px) {body.giftcard{background:url('/gfx/cze/background_left_tablet.jpg?r=1492502941') no-repeat top left}}
 @media only screen and (max-width:868px) {body.giftcard{background-position:-115px 0 !important;}}
 @media only screen and (max-width:757px) {body.giftcard{background:none !important}}
+@media only screen and (max-width:757px) {.main_hotspot .product_wrapper {width: calc((100vw - 30px) / 2) !important;}}
