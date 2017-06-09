@@ -1592,8 +1592,8 @@ div.cat_product .promo_counter .sep{display:inline-block;font-size:22px;line-hei
 #menu_basket_phone a span{display:block !important;text-align:center;font-size:9px;color:#000;text-decoration:none}
 #menu_basket_phone a:before{display:block;content:'';left:50%;transform:translateX(-50%);position:absolute;width:40px;height:40px;top:-47px}
 #menu_basket_phone a.wishes_link:before{}
-#menu_basket_phone a.account_link:before{background: url(/data/include/cms/icons/sig-in.svg) no-repeat center center;background-size: 40px;}
-#menu_basket_phone a.basket_link:before{background: url(/data/include/cms/icons/Koszyk1.svg) no-repeat center center;background-size: 40px;}
+#menu_basket_phone a.account_link:before{background:url(/data/include/cms/icons/sig-in.svg) no-repeat center center;background-size:40px;}
+#menu_basket_phone a.basket_link:before{background:url(/data/include/cms/icons/Koszyk1.svg) no-repeat center center;background-size: 40px;}
 #menu_basket_phone a.wishes_link{left:4%}
 #menu_basket_phone a.wishes_link i{position:absolute;top:-52px;font-size:4.5em}
 #menu_basket_phone a.account_link{right:3%}
@@ -1770,7 +1770,7 @@ div.col-bg-1.align_row.main_hotspot_sub{overflow:hidden}
 #menu_button3{padding:0;overflow:hidden;margin:0 -10px}
 #menu_button3 div.menu_button_wrapper{padding:0 10px;display:inline-block;float:left;verflow:hidden;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 #menu_button3 a{display:block}
-#menu_button3 img{width:100% !important;height:auto !important}
+#menu_button3 img{height:auto !important}
 #main_cms2{padding-bottom:0}
 #main_hotspot_zone2 .products_wrapper{width:auto;padding:0}
 #main_hotspot_zone3 .products_wrapper{width:auto;padding:0}
@@ -2453,6 +2453,11 @@ body.giftcard {background:url('/gfx/slo/background_left_deskt.jpg?r=1492502941')
 .giftcard > #alert_cover{display:block}
 .giftcard .disabled{display:none}
 .giftcard .disabled #card_preview{display:none}
+.accept_terms_traditional_card input[type='checkbox']{display:none}
+.accept_terms_traditional_card input[type='checkbox'].required_in + label:before{border:1px solid #f00 !important}
+.accept_terms_traditional_card input[type='checkbox'] + label:before{background:#ffffff none repeat scroll 0 0;border:1px solid #ccc;content:'';cursor:pointer;display:inline-block;float:left;height:17px;margin-right:10px;width:17px;cursor:pointer}
+.accept_terms_traditional_card input[type='checkbox']:checked + label:before{background:url('/gfx/slo/dencheck.jpg?r=1492502941') center center no-repeat}
+.accept_terms_traditional_card {color:#303030;font-size: 14px;font-weight: 400;margin: 0 0 10px;}
 form.giftcard_page .required_in{border:1px solid #f00 !important}
 form.giftcard_page > h1{background:url('/gfx/slo/boxgift.jpg?r=1492502941') top center no-repeat;color:#000;display:inline-block;font-size:3.74em;font-weight:600;letter-spacing:-0.7px;line-height:75px;margin:22px auto;padding-top:61px;text-transform:uppercase}
 form.giftcard_page > p{font-size:1.14rem;margin-bottom:35px;font-weight:400;text-transform:none}
@@ -2526,7 +2531,7 @@ div.projector_buttons{position:relative}
 div.product_section.tell_availability{margin:0}
 div.clearBoth{clear:both;height:auto}
 div.projector_alert_55916{background:#d9edf7;border:1px solid transparent;color:#337ab7;font-size:14px;padding:22px 65px !important;margin-bottom:10px !important;text-align:center;position:relative;position:absolute;z-index:9998;padding:20px 15px 20px 55px !important;margin:0 auto;font-weight:400;text-align:center;background-position:10px}
-a.projector_medium_image{position:relative;display:block}
+a.projector_medium_image{position:relative;display:inline-block}
 a.param_trait_gfx{display:inline-block;vertical-align:top}
 a.shipping_info{display:none}
 a.show_size_cms{clear:both;display:block;margin-top:10px;text-decoration:none;font-size:10px;color:#404040}
@@ -2546,7 +2551,8 @@ small.projector_price_unit_sep{display:none}
 small.projector_price_unit_sellby{margin-right:5px}
 small.projector_price_unit{display:none}
 button.projector_butttons_buy{background:url('/gfx/slo/background.jpg?r=1492502941');border:0;font-size:18px;height:44px;overflow:hidden;width:100%;padding:0 15px;text-align:center;font-weight:400;text-transform:none;margin:0 0 4px}
-.photos .slide_photo ul img{margin: 0 auto;max-height: 543px; max-width: 543px}#projector_form .label_icons{clear:both}
+.photos .slide_photo ul img{margin:0 auto;max-height:543px;max-width:100%}
+#projector_form .label_icons{clear:both}
 #projector_form .label_icons span{display:inline-block;padding:2px 7px;margin:0 1px 15px 0;display:inline-block;text-transform:uppercase;background:#eee;font-size:12px;color:#fff;font-weight:400}
 #projector_form .label_icons .newproducts{background:#eee;color:#000}
 #projector_form .label_icons .promo{background:#db2b1d}
@@ -4860,4 +4866,4 @@ div.stocks_list_wrapper{width:20%}}
 @media only screen and (max-width:1362px) {body.giftcard{background:url('/gfx/slo/background_left_tablet.jpg?r=1492502941') no-repeat top left}}
 @media only screen and (max-width:868px) {body.giftcard{background-position:-115px 0 !important;}}
 @media only screen and (max-width:757px) {body.giftcard{background:none !important}}
-@media only screen and (max-width: 757px) {.main_hotspot .product_wrapper {width: calc((100vw - 30px) / 2) !important;}}
+@media only screen and (max-width:757px) {.main_hotspot .product_wrapper {width: calc((100vw - 30px) / 2) !important;}}
