@@ -2440,7 +2440,7 @@ form.giftcard_page{text-align:center}
 .giftcard>.giftcard_top,.giftcard>.giftcard_bottom{background-size:cover !important;display:block;height:128px;opacity:0.5;width:100%;}
 body > .giftcard_top{display:block;height:34px !important;opacity:1 !important;width:100%;background:#000 !important}
 body > .giftcard_bottom{display:none !important}
-body.giftcard {background:url('/gfx/slo/background_left_deskt.jpg?r=1492502941') no-repeat top left;}
+body.giftcard {background:url(/data/include/cms/gfx/slo/background_left_deskt.jpg) no-repeat top left;}
 .giftcard > *{display:none}
 .giftcard > #dialog_wrapper{display:block;box-shadow:0 0 20px rgba(0,0,0,0.1)}
 .giftcard #dialog_wrapper_sub{padding:0}
@@ -2456,7 +2456,7 @@ body.giftcard {background:url('/gfx/slo/background_left_deskt.jpg?r=1492502941')
 .accept_terms_traditional_card input[type='checkbox']{display:none}
 .accept_terms_traditional_card input[type='checkbox'].required_in + label:before{border:1px solid #f00 !important}
 .accept_terms_traditional_card input[type='checkbox'] + label:before{background:#ffffff none repeat scroll 0 0;border:1px solid #ccc;content:'';cursor:pointer;display:inline-block;float:left;height:17px;margin-right:10px;width:17px;cursor:pointer}
-.accept_terms_traditional_card input[type='checkbox']:checked + label:before{background:url('/gfx/slo/dencheck.jpg?r=1492502941') center center no-repeat}
+.accept_terms_traditional_card input[type='checkbox']:checked + label:before{background:url(/gfx/slo/dencheck.jpg?r=1492502941) center center no-repeat}
 .accept_terms_traditional_card {color:#303030;font-size: 14px;font-weight: 400;margin: 0 0 10px;}
 form.giftcard_page .required_in{border:1px solid #f00 !important}
 form.giftcard_page > h1{background:url('/gfx/slo/boxgift.jpg?r=1492502941') top center no-repeat;color:#000;display:inline-block;font-size:3.74em;font-weight:600;letter-spacing:-0.7px;line-height:75px;margin:22px auto;padding-top:61px;text-transform:uppercase}
@@ -4863,7 +4863,7 @@ div.stocks_list_wrapper{width:20%}}
  .dl-menu li a[title='Gift card']{display: block}.dl-menu li a[title='Karta podarunkowa']{display: none}
 #projector_form div.product_section.versions .select_button{padding:0 2px;margin:0;border:0;background:none;text-align:center;}}
 .zx_mediaslot, iframe[name="google_conversion_frame"]{display:none}
-@media only screen and (max-width:1362px) {body.giftcard{background:url('/gfx/slo/background_left_tablet.jpg?r=1492502941') no-repeat top left}}
+@media only screen and (max-width:1362px) {body.giftcard{background:url(/data/include/cms/gfx/slo/background_left_tablet.jpg?r=1492502941) no-repeat top left}}
 @media only screen and (max-width:868px) {body.giftcard{background-position:-115px 0 !important;}}
 @media only screen and (max-width:757px) {body.giftcard{background:none !important}}
 @media only screen and (max-width:757px) {.main_hotspot .product_wrapper {width: calc((100vw - 30px) / 2) !important;}}
