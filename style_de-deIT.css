@@ -398,6 +398,10 @@ h3.wishes_label ~ img{display:inline-block;clear:left;vertical-align:middle}
 .wishesedit_page .label_icons .distinguished{background:#16950c;color:#fff}
 .wishesedit_page .label_icons .exclusive{background:#838383;color:#fff}
 .wishesedit_page .label_icons .premium{background:#000;color:#fff}
+.basketedit_favorite  .wrapper_favorite .sizes_list, .wrapper_favorite .sizewarning, .wrapper_favorite .projector_butttons_buy {display:none;}
+.basketedit_favorite  .wrapper_favorite:hover .sizes_list, .wrapper_favorite:hover .sizewarning, .wrapper_favorite:hover .projector_butttons_buy {display:block;}
+.wishesedit_page button.projector_butttons_buy {height: 36px;}
+.wishesedit_page .after_photo {margin-bottom:10px;}
 div.categories_contener{padding-left:30px}
 div.categories_cat{padding-bottom:20px}
 div.categories_cat_sub{margin-top:10px;width:100%;display:table}
@@ -3961,7 +3965,7 @@ div.cms_fb_comments iframe{border:none;width:756px !important}
 	#inOtherVers .otherVer_btn a:hover{
 		background:#000 !important;  border-color:#000 !important
 	}	
-.wishesedit_page button.projector_butttons_buy i {  background: rgba(0, 0, 0, 0) url('/gfx/ger/ico_buy.png?r=1492502941') no-repeat scroll 0 0 / contain ;    content: '';   display: inline-block;   height: 20px;    margin: 0 10px 0 0;    vertical-align: middle;    width: 19px;}
+.wishesedit_page button.projector_butttons_buy i {  background: rgba(0, 0, 0, 0) url('/gfx/ger/ico_buy.png?r=1492502941') no-repeat scroll 0 0 / contain ;    content: '';   display: inline-block;   height: 20px;    margin: 0 10px 0 0;    vertical-align: top;    width: 19px;}
 .wishesedit_page button.projector_butttons_buy {max-width: 74%;}
 .wishesedit_page .sizewarning {color: #aa0000;max-width: 74%; padding: 10px 0; text-align: right;}
 @media only screen and (max-width:979px){
