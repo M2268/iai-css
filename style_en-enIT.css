@@ -978,7 +978,7 @@ span.filter_range_separate{display:inline-block;height:22px;text-align:right;ver
 #filter_remove_wrap{padding:0 5px 20px}
 .menu_filter_wrapper .filter_list_remove{cursor:pointer;display:inline-block;font-weight:700;line-height:1.2;text-align:left;text-decoration:none;background:#fff;border:1px solid #d2d2d2;color:#000;font-size:0.79rem;font-weight:400;margin-bottom:3px;margin-right:3px;padding:9px 29px 9px 7px;position:relative;text-decoration:none;width:calc(33.333% - 2px)}
 .menu_filter_wrapper .filter_list_remove:nth-child(3n + 1){margin-right:0}
-.menu_filter_wrapper .filter_list_remove:after{content:'ÄÂÂ';font-family:FontAwesome;font-style:normal;margin-left:3px;text-decoration:inherit;position:absolute;right:6px;top:9px}
+.menu_filter_wrapper .filter_list_remove:after{content:'ÄÂ€Â';font-family:FontAwesome;font-style:normal;margin-left:3px;text-decoration:inherit;position:absolute;right:6px;top:9px}
 .menu_filter_wrapper .clear_filters_h{display:block;font-size:1rem;color:#222;padding:3px 0 8px}
 #menu_filter{margin-bottom:10px}
 #menu_filter h2{display:none}
