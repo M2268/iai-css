@@ -974,7 +974,7 @@ li.menu_category4_active a.menu_category4{font-weight:700}
 #menu_ajax ul.menu_category2{padding:0 0 0 10px}
 div.suwakwrapper{display:block !important;width:100%;margin:3px 0;color:#606060;margin:3px 0 0 0}
 span.filter_quantity{display:none}
-span.filter_range_separate{display:inline-block;height:22px;text-align:right;vertical-align:bottom;width:16px}
+span.filter_range_separate{display:none !important}
 #filter_remove_wrap{padding:0 5px 20px}
 .menu_filter_wrapper .filter_list_remove{cursor:pointer;display:inline-block;font-weight:700;line-height:1.2;text-align:left;text-decoration:none;background:#fff;border:1px solid #d2d2d2;color:#000;font-size:0.79rem;font-weight:400;margin-bottom:3px;margin-right:3px;padding:9px 29px 9px 7px;position:relative;text-decoration:none;width:calc(33.333% - 2px)}
 .menu_filter_wrapper .filter_list_remove:nth-child(3n + 1){margin-right:0}
@@ -982,22 +982,27 @@ span.filter_range_separate{display:inline-block;height:22px;text-align:right;ver
 .menu_filter_wrapper .clear_filters_h{display:block;font-size:1rem;color:#222;padding:3px 0 8px}
 #menu_filter{margin-bottom:10px}
 #menu_filter h2{display:none}
-div.menu_filter_wrapper label{background:url('/gfx/ita/checkbox.png?r=1492502941') no-repeat left center;padding:2px 5px 2px 25px;display:inline-block}
-div.menu_filter_wrapper label.active{background:url('/gfx/ita/checkbox_active.png?r=1492502941') no-repeat left center}
-#menu_filter div.filter_item{display:inline-block;margin:0 10px 10px 0;position:relative;vertical-align:top}
-#menu_filter h3{color:#000;font-size:14px;overflow:hidden;position:relative;font-weight:600;background:#f3f3f3 none repeat scroll 0 0;border:1px solid #d2d2d2;clear:both;min-width:170px;overflow:hidden;padding:6px 33px 6px 13px;z-index:9}
+div.menu_filter_wrapper label{background:url('/data/include/cms/uncheck_bg.jpg?r=1492502941') no-repeat left center;padding:2px 5px 2px 25px;display:inline-block;font-size:0.93em;text-transform:uppercase;color:#888}
+div.menu_filter_wrapper label.active{background:url('/data/include/cms/check_bg.jpg?r=1492502941') no-repeat left center;color:#000}
+#menu_filter div.filter_item{display:inline-block;margin:0 0 10px;position:relative;vertical-align:top}
+#menu_filter h3{background:#fff;border-bottom:1px solid #ececec;border-top:1px solid #ececec;clear:both;color:#000;font-size:1rem;font-weight:600;min-width:170px;overflow:hidden;padding:6px 33px 6px 13px;position:relative;z-index:9}
 #menu_filter h3 span.filter_loader{background:url('/gfx/ita/loader.gif?r=1492502941') bottom center no-repeat;display:inline-block;width:16px;height:16px;margin-bottom:-1px;margin-left:5px}
-#menu_filter h3 a.filter_toggle:after{color:#606060;content:'\f107';font-family:FontAwesome;font-size:20px;font-weight:300;padding-left:6px;position:relative;right:6px;top:-7px;border-left:1px solid #d2d2d2}
+#menu_filter h3 a.filter_toggle:after{color: #000;content:'\f107';font-family: FontAwesome;font-size:15px;font-weight:600;padding-left:6px;position:relative;right:25px;top:-1px}
+#menu_filter h3 a.filter_toggle:before{background:#ddd;content:'';height:13px;position:absolute;right:1px;top:17%;transform:rotate(14deg);width:2px}
+#menu_filter .last_child h3 a.filter_toggle:before{display:none}
 #menu_filter h3 a.filter_toggle:hover{opacity:1}
 #menu_filter h3 a.filter_toggle.active:after{content:'\f106'}
-#menu_filter h3 span{display:inline-block;font-size:0.9em;font-weight:500;text-transform:none}
-#menu_filter h3 a{color:#000;font-size:0.6em;font-weight:normal;left:0;padding:3px 0;position:absolute;right:0;text-decoration:none;text-align:right}
+#menu_filter h3 span{display:inline-block;font-size:0.79rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase}
+#menu_filter h3 a{color: #000;font-size:0.5rem;font-weight:400;left:0;padding:3px 0;position:absolute;right:0;text-align:right;text-decoration:none;text-transform:uppercase}
 #menu_filter h3 a:hover{color:#666}
 #menu_filter h3 a.rem_filter{display:none}
-#menu_filter div.filter_content{background:#fff;border:1px solid #d2d2d2;display:none;min-width:100%;position:absolute;left:0;top:36px;width:calc(100% + 25px);z-index:55}
+#menu_filter div.filter_content{background:#fff;border:1px solid #ececec;display:none;min-width:100%;position:absolute;left:0;top:30px;width:100%;z-index:55}
 #menu_filter .last_filter div.filter_content{left:auto;right:0}
-#menu_filter ul{list-style:none;overflow:hidden;padding:16px 4px 5px 9px;max-height:240px;overflow:auto}
+#menu_filter ul{list-style:none;overflow:hidden;padding:16px 4px 5px 9px;max-height:150px;overflow:auto}
 #menu_filter li{line-height:1;display:block;margin-bottom:8px}
+#menu_filter #filter_sizes li {margin:0;display:inline-block}
+#menu_filter #filter_sizes li label {background: none !important;border:1px solid #d4d4d4;display:inline-block;line-height:1;margin:0 9px 7px 0;padding:9px 5px;width:auto;min-width:31px;text-align:center;}
+#menu_filter #filter_sizes li label.active {color:#39b3e3}
 #menu_filter li div.filter_name_wrapper{vertical-align:middle;font-size:0.9em}
 #menu_filter li input.checkbox_hidden{left:-5000px;position:absolute}
 #menu_filter li label:hover{cursor:pointer}
@@ -1007,15 +1012,19 @@ div.menu_filter_wrapper label.active{background:url('/gfx/ita/checkbox_active.pn
 #menu_filter li.disabled label:hover{cursor:not-allowed}
 #menu_filter li.filterhidden{display:none !important}
 #menu_filter li.filterhidden.showhidden{display:block !important}
-#menu_filter div.filter_item.list_type input{color:#606060;float:left;padding-left:23%;text-align:left;vertical-align:middle;width:100% !important;border:none !important}
-#menu_filter div.filter_item.dual_type input{float:left}
+#menu_filter div.filter_item.list_type input{color:#000;float:right;padding-right:38%;text-align:right;vertical-align:middle;width:100% !important;border:none !important;font-weight:700}
+#menu_filter div.filter_item.dual_type input{float:left;padding-bottom:1px;padding-right:34px}
 #menu_filter div.filter_options{overflow:hidden}
-#menu_filter a.filter_submit{background:#ef1e21 none repeat scroll 0 0;border:medium none;color:#fff!important;display:block;float:none;font-size:14px !important;font-weight:500;margin:9px;text-transform:none;width:auto}
+#menu_filter a.filter_submit{background:#029cd8;padding:8px 10px;border:medium none;color:#fff!important;display:block;float:none;font-size:13px !important;font-weight:500;margin:9px;text-transform:uppercase;width:auto}
 #menu_filter a.filter_submit:hover{background:#000}
 #menu_filter a.filter_submit_small{background:#333;border:1px solid #333;color:#fff;text-transform:uppercase;text-decoration:none;font-size:0.9em;padding:5px 10px;font-weight:700;font-family:Arial;display:inline-block;cursor:pointer;overflow:visible;text-align:center;line-height:1.2}
 #menu_filter a.filter_submit_small:hover{background:#212121;border-color:#212121;color:#fff;text-decoration:none}
 #menu_filter a.show_all{border:medium none;color:#ef1e21 !important;font-size:0.93em !important;font-weight:normal;text-align:center;width:100%;padding:4px;background:none}
 #menu_filter a.show_all:hover{color:#666 !important}
+#menu_filter #filter_traits1274432120_content label.imgfix img {min-height:38px}
+#menu_filter #filter_traits1274432120_content .mCSB_inside > .mCSB_container{margin-right:16px}
+#menu_filter #filter_traits1274432120_content li {display:block;float: left;height:38px;line-height:1;margin:0 7px 7px 0 !important;padding:0;width:calc(33.333% - 7px) !important}
+#menu_filter #filter_sizes_content .filter_quantity {display: none !important}
 #filter_buttons{overflow:hidden;text-align:center;padding:0 15px 15px}
 #filter_buttons a.remove_all_filters{margin:10px auto 0;padding:0.5em;width:100%}
 #filter_buttons a.filters_submit{margin:10px auto 0;width:100%;padding:0.5em}
@@ -1039,20 +1048,20 @@ div.filter_tooltip{position:absolute;z-index:999;left:-9999px;min-width:0px;padd
 #menu_filter ul.filter_price{padding:8px 12px 5px 10px}
 #menu_filter div.filter_item.list_type ul.filter_price li{display:none}
 #menu_filter ul.filter_price li.filter_price_range{padding:0 3px 5px;display:block !important;margin-top:20px}
-#slider-price{background:#999;color:#fff;display:block;font-weight:bold;position:relative;width:93%;height:1px}
-#slider-price .ui-widget-header{display:none}
-#slider-price a{background:#999;border:medium none;height:14px;width:14px;margin:0 auto;position:absolute;text-align:center;top:-6px;padding:0}
+#slider-price{background:#fff;color:#fff;display:block;font-weight:bold;position:relative;width:92% !important;height:1px}
+#slider-price .ui-widget-header{background: #029cd8;border: 1px solid #029cd8}
+#slider-price a{background:#029cd8;border:medium none;height:14px;width:14px;margin:0 auto;position:absolute;text-align:center;top:-6px;padding:0;border-radius:20px;}
 #filter_price_range{display:table;width:100%;margin-top:20px}
 #filter_price_range > *{display:table-cell;vertical-align:middle}
-li.filter_price_range span.filter_range_from_wrapper{background:#fff none repeat scroll 0 0;display:inline-block;font-size:0.9em;height:23px;line-height:21px;text-align:center;white-space:nowrap;width:42%;position:relative}
-li.filter_price_range span.filter_range_from_wrapper input{background:rgba(0,0,0,0) none repeat scroll 0 0;border:medium none;box-shadow:none;border:1px solid transparent;font-size:13px;height:21px;padding:0 5px;text-align:right;width:80%}
-li.filter_price_range span.filter_range_from_wrapper span{width:19%}
-li.filter_price_range span.filter_range_to_wrapper{background:#fff none repeat scroll 0 0;display:inline-block;font-size:0.9em;height:23px;line-height:21px;text-align:center;white-space:nowrap;width:42%;position:relative}
-li.filter_price_range span.filter_range_to_wrapper input{background:rgba(0,0,0,0) none repeat scroll 0 0;border:medium none;box-shadow:none;font-size:13px;height:21px;padding:0 5px;text-align:right;width:80%}
-li.filter_price_range span.filter_range_to_wrapper span{width:19%}
+li.filter_price_range span.filter_range_from_wrapper{background:#fff none repeat scroll 0 0;display:inline-block;font-size:1em;height:23px;line-height:21px;text-align:center;white-space:nowrap;width:50%;position:relative;font-weight:700}
+li.filter_price_range span.filter_range_from_wrapper input{background:rgba(0,0,0,0) none repeat scroll 0 0;border:medium none;box-shadow:none;border:1px solid transparent;font-size:13px;height:21px;padding:0 5px;text-align:right;width:auto}
+li.filter_price_range span.filter_range_from_wrapper span{width:20%}
+li.filter_price_range span.filter_range_to_wrapper{background:#fff none repeat scroll 0 0;display:inline-block;font-size:1em;height:23px;line-height:21px;text-align:center;white-space:nowrap;width:50%;position:relative;font-weight:700}
+li.filter_price_range span.filter_range_to_wrapper input{background:rgba(0,0,0,0) none repeat scroll 0 0;border:medium none;box-shadow:none;font-size:13px;height:21px;padding:0 5px;text-align:right;width:auto}
+li.filter_price_range span.filter_range_to_wrapper span{width:20%}
 li.filter_price_range span.filter_submit_range_wrapper{width:18%;padding-left:7px;background:none;display:none}
 #menu_filter input[type=checkbox]{display:none}
-#menu_filter .filter_hideup{background:#dcdcdc none repeat scroll 0 0;border:medium none;color:#000!important;display:block;float:none;font-size:14px !important;font-weight:500;margin:9px;text-transform:none;width:auto}
+#menu_filter .filter_hideup{background:#d2d2d2 none repeat scroll 0 0;padding:7px 0;border:medium none;color:#fff !important;display:block;float:none;font-size:14px !important;font-weight:500;margin:9px;text-transform:uppercase;width:auto}
 #menu_filter .filter_hideup:hover{background:#e5e5e5}
 .mCustomScrollbar{-ms-touch-action:none;touch-action:none}
 .mCustomScrollbar.mCS_no_scrollbar{-ms-touch-action:auto;touch-action:auto}
@@ -1070,7 +1079,8 @@ li.filter_price_range span.filter_submit_range_wrapper{width:18%;padding-left:7p
 .mCSB_scrollTools a + .mCSB_draggerContainer{margin:20px 0}
 .mCSB_scrollTools .mCSB_draggerRail{width:6px;height:100%;margin:0 auto;background:#eee;border-radius:3px}
 .mCSB_scrollTools .mCSB_dragger{cursor:pointer;width:100%;height:14px !important;z-index:1}
-.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background:#414141;height:100%;margin:0 auto;position:relative;text-align:center;width:6px}
+#menu_filter .mCSB_scrollTools .mCSB_dragger{height:90px !important}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background:#ababab;height:100%;margin:0 auto;position:relative;text-align:center;width:6px}
 .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded .mCSB_dragger_bar,.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_dragger .mCSB_dragger_bar{width:12px}
 .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger.mCSB_dragger_onDrag_expanded + .mCSB_draggerRail,.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerContainer:hover .mCSB_draggerRail{width:8px}
 .mCSB_scrollTools .mCSB_buttonUp,.mCSB_scrollTools .mCSB_buttonDown{display:block;position:absolute;height:20px;width:100%;overflow:hidden;margin:0 auto;cursor:pointer}
@@ -1079,13 +1089,19 @@ li.filter_price_range span.filter_submit_range_wrapper{width:18%;padding-left:7p
 .mCSB_container_wrapper > .mCSB_container{padding-right:30px;padding-bottom:30px}
 .mCSB_scrollTools,.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,.mCSB_scrollTools .mCSB_buttonUp,.mCSB_scrollTools .mCSB_buttonDown,.mCSB_scrollTools .mCSB_buttonLeft,.mCSB_scrollTools .mCSB_buttonRight{}
 .mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,.mCSB_scrollTools_vertical.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail,.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_dragger_bar,.mCSB_scrollTools_horizontal.mCSB_scrollTools_onDrag_expand .mCSB_draggerRail{}
-#menu_filter h3.expanded{background:#fff;border-bottom:none;padding:6px 33px 12px 13px;z-index:56;margin-bottom:-6px}
+#menu_filter .mCSB_scrollTools .mCSB_dragger{cursor:pointer;height:14px;padding-top:17px;width:100%;z-index:1;right:2px}
+#menu_filter .mCSB_scrollTools:before,#menu_filter .mCSB_scrollTools:after{background:#fff;border:1px solid #f0f0f0;color:#888;content:'\f106';font-family:FontAwesome;padding:0 4px;position:absolute;top:0;z-index:0;right:1px}
+#menu_filter .mCSB_scrollTools:after{content:'\f107';top:auto;bottom:0;z-index:3}
+#menu_filter .mCSB_scrollTools .mCSB_dragger{cursor:pointer;height:14px;padding:20px 0;width:100%;z-index:1}
+#menu_filter .mCSB_scrollTools .mCSB_draggerRail, #menu_filter .mCSB_scrollTools .mCSB_draggerRail:after{background:rgba(0, 0, 0, 0);border-radius:3px;height:100%;margin:0 auto;width:6px;right:2px}
+#menu_filter .mCSB_scrollTools .mCSB_draggerRail:after{background:#eee;border:0 none;content:'';position:absolute;top:0;z-index:-1;right:7px}
+#menu_filter h3.expanded{z-index:56;margin-bottom:-6px}
 #menu_filter li.filter_price_range span.filter_range_from_wrapper::after,#menu_filter li.filter_price_range span.filter_range_to_wrapper::after{color:#333333;content:attr(data_currency);display:block;font-size:1.07em;height:10px;position:absolute;right:0;text-align:right;top:0;width:46px;z-index:2000}
-#menu_filter label.premium{display:inline-block;width:95%;font-size:0.87rem;text-align:center;text-transform:uppercase;background-color:#000;color:#fff;padding:4px 0 4px 10px}
+/*#menu_filter label.premium{display:inline-block;width:95%;font-size:0.87rem;text-align:center;text-transform:uppercase;background-color:#000;color:#fff;padding:4px 0 4px 10px}
 #menu_filter label.only_here{display:inline-block;width:95%;font-size:0.87rem;text-align:center;text-transform:uppercase;background-color:#838383;color:#fff;padding:4px 0 4px 10px}
 #menu_filter label.distinguished{display:inline-block;width:95%;font-size:0.87rem;text-align:center;text-transform:uppercase;background-color:#a2cb40;color:#fff;padding:4px 0 4px 10px}
 #menu_filter label.new{display:inline-block;width:95%;font-size:0.87rem;text-align:center;text-transform:uppercase;background-color:#eee;color:#000;padding:4px 0 4px 10px}
-#menu_filter label.sale{display:inline-block;width:95%;font-size:0.87rem;text-align:center;text-transform:uppercase;background-color:#ca2c3f;color:#fff;padding:4px 0 4px 10px}
+#menu_filter label.sale{display:inline-block;width:95%;font-size:0.87rem;text-align:center;text-transform:uppercase;background-color:#ca2c3f;color:#fff;padding:4px 0 4px 10px}*/
 #menu_filter #filter_price li{margin-bottom:4px}
 #menu_filter #filter_price .filter_traits1274433049{padding-top:0}
 .filter_item select{display:block;right:0;bottom:0;left:0;top:0;position:absolute;z-index:99;opacity:0}
@@ -3991,7 +4007,6 @@ div.platnosci_54388{float:none;overflow:hidden;text-align:left;width:auto}
 div.platnosci_54388 a img{height:auto !important}
 a.n53399_iailogo{float:none}
 a.rs-link{text-decoration:none;background-color:#111;color:#fff;padding:10px 15px}
-#menu_filter div.filter_item{padding:5px}
 #menu_filter li{margin-bottom:15px}
 #filter_buttons{padding:0 5px 5px}
 #menu_filter ul.filter_price li.filter_price_range{margin-bottom:2px}
@@ -4354,14 +4369,14 @@ li.menu_category3_active a.menu_category2:before{display:none}
 #menu_filter{background:#fff;border:none;z-index:10;position:absolute;width:318px;min-width:52%;border:1px solid #a9a9a9;padding:10px;right:-400px;transition:right 100ms ease 100ms;border-top:none;border-right:none;top:41px}
 div.menu_filter_wrapper label{font-size:1em}
 #menu_filter div.filter_item{padding:5px;width:50%;display:inline-block;margin:0}
-#menu_filter h3{margin-bottom:0px;min-width:auto;background:#fff;font-size:12px;padding:7px 33px 0 8px}
+#menu_filter h3{background:#fff;border-bottom:1px solid #ececec;border-top:1px solid #ececec;clear:both;color:#000;font-size:1.14rem;font-weight:600;min-width:160px;overflow:hidden;padding:6px 33px 6px 13px;position:relative;z-index:9}
 #menu_filter h3 a.filter_toggle:after{border-left:none;top:-6px}
-#menu_filter div.filter_content{padding-left:1px;padding-top:15px;font-size:1.2em;position:relative;top:0;width:calc(100% + 11px)}
+#menu_filter div.filter_content{padding-left:1px;padding-top:15px;font-size:1.2em;position:relative;top:0;width:100%}
 #menu_filter div.filter_item.list_type input{text-align:left;padding:0}
 #filter_buttons a.remove_all_filters{margin:10px auto 0;padding:0.5em;width:49%}
 #filter_buttons a.filters_submit{margin:10px 2% 0 auto;padding:0.5em}
 html.filter_on,html.filter_on body{overflow:visible}
-#menu_filter h3.expanded{margin-bottom:-1px;padding:6px 33px 12px 13px}
+#menu_filter h3.expanded{background: #fff;z-index: 56}
 .filter_item select{width:100%}
 .filter_item h4{margin-bottom:0px;min-width:auto;background:#fff;font-size:12px;padding:7px 33px 0 8px}
 #menu_filter h4 a.filter_toggle:after{border-left:none;top:-6px}
