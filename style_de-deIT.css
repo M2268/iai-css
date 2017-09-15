@@ -2548,7 +2548,7 @@ img.projector_rebatenumber_tip{cursor:help;margin-left:4px;vertical-align:middle
 span.projector_price_srp{letter-spacing:2px;font-size:1.8em;font-weight:300}
 span.projector_price_yousave{display:block;color:#a2cb40;padding:0}
 span.projector_points_recive_points{vertical-align:top}
-span.projector_status_description{text-transform:lowercase;color:#ffcc00}
+span.projector_status_description{color:#ffcc00}
 del.projector_price_maxprice{font-size:17px;font-weight:400;display:block;color:#999;white-space:nowrap}
 strong.projector_price_value{font-size:16px;color:#a2cb40;font-weight:400}
 small.projector_price_unit_sep{display:none}
